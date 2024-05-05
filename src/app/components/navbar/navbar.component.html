@@ -1,10 +1,23 @@
-<nav>
-  <div>
-    <a routerLink="/">Home</a>
-    <a routerLink="/user">User</a>
+<nav class="px-6 py-4 shadow-sm">
+  <div class="flex row justify-between items-center">
+    <div>
+      <a routerLink="/" class="font-bold text-2xl tracking-wide text-blue-500">
+        <span class="text-yellow-400">pt</span>pedia
+      </a>
+    </div>
+    <div class="flex row gap-8 font-semibold">
+      <a routerLink="/" class="hover:text-blue-500">Home</a>
+      <a href="" class="hover:text-blue-500">Shop</a>
+      <a href="" class="hover:text-blue-500">Details</a>
+      <a href="" class="hover:text-blue-500">Blogs</a>
+      <a href="" class="hover:text-blue-500">Events</a>
+    </div>
+    <div>
+      <a routerLink="/user">User</a>
+    </div>
   </div>
 </nav>
 
 <div>
-    <router-outlet/>
+  <router-outlet />
 </div>
